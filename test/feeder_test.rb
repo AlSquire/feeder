@@ -1,8 +1,5 @@
-require './feeder.rb'
-require 'test/unit'
-require 'rack/test'
-
-ENV['RACK_ENV'] = 'test'
+require 'test_helper'
+require './feeder'
 
 class FeederTest < Test::Unit::TestCase
   include Rack::Test::Methods
