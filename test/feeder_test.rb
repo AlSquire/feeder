@@ -11,9 +11,9 @@ class FeederTest < Test::Unit::TestCase
 
   def expected_results
     [
-      "One anime",
-      "Other anime",
-      "Third anime"
+      { :title => "One anime",   :link => "http://example.com/one_anime.html" },
+      { :title => "Other anime", :link => "http://example.com/other_anime.html" },
+      { :title => "Third anime", :link => "http://example.com/third_anime.html" }
     ]
   end
 
@@ -33,6 +33,8 @@ class FeederTest < Test::Unit::TestCase
 
     doc = Nokogiri::XML(last_response.body)
     assert_equal 3, doc.css('item').count
-    assert_equal expected_results, doc.css('item > title').map(&:content)
+    assert_equal expected_results.map { |r| r[:title] }, doc.css('item > title').map(&:content)
+    assert_equal expected_results.map { |r| r[:link] },  doc.css('item > link').map(&:content)
+    assert_equal expected_results.map { |r| r[:link] },  doc.css('item > guid').map(&:content)
   end
 end

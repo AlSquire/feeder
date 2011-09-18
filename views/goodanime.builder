@@ -6,7 +6,9 @@ xml.rss :version => "2.0" do
 
     @results.each do |item|
       xml.item do
-        xml.title item
+        xml.title item[:title]
+        xml.link  item[:link]
+        xml.guid  item[:link]
       end
     end
   end
