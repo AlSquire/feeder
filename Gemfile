@@ -4,6 +4,10 @@ gem 'sinatra'
 gem 'nokogiri'
 gem 'builder'
 
+group :production do
+  gem 'thin'
+end
+
 group :development, :test do
   gem 'rack-test'
   gem 'guard-test'
