@@ -8,7 +8,7 @@ xml.rss :version => "2.0" do
       xml.item do
         xml.title item[:title]
         xml.link  item[:link]
-        xml.guid  item[:link]
+        xml.guid  item[:guid]
       end
     end
   end

@@ -15,7 +15,8 @@ private
       title = li.css('a').first.content.strip
       link  = li.css('a').first.attr(:href)
       state = li.css('font').first.content
-      memo << { :title => "#{title} #{state}", :link => link }
+      guid  = URI.parse(link).path[1..-1] + "-" + state.match(/^\((.*)\)$/)[1].downcase
+      memo << { :title => "#{title} #{state}", :link => link, :guid => guid }
     end
   end
 end

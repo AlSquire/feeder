@@ -11,9 +11,9 @@ class FeederTest < Test::Unit::TestCase
 
   def expected_results
     [
-      { :title => "One anime",   :link => "http://example.com/one_anime.html" },
-      { :title => "Other anime", :link => "http://example.com/other_anime.html" },
-      { :title => "Third anime", :link => "http://example.com/third_anime.html" }
+      { :title => "One anime",   :link => "http://example.com/one_anime.html",   :guid => "one_anime" },
+      { :title => "Other anime", :link => "http://example.com/other_anime.html", :guid => "other_anime" },
+      { :title => "Third anime", :link => "http://example.com/third_anime.html", :guid => "third_anime" }
     ]
   end
 
@@ -35,6 +35,6 @@ class FeederTest < Test::Unit::TestCase
     assert_equal 3, doc.css('item').count
     assert_equal expected_results.map { |r| r[:title] }, doc.css('item > title').map(&:content)
     assert_equal expected_results.map { |r| r[:link] },  doc.css('item > link').map(&:content)
-    assert_equal expected_results.map { |r| r[:link] },  doc.css('item > guid').map(&:content)
+    assert_equal expected_results.map { |r| r[:guid] },  doc.css('item > guid').map(&:content)
   end
 end
