@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'nokogiri'
 gem 'builder'
+gem 'rake'
 
 group :production do
   gem 'thin'
