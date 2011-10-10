@@ -1,8 +1,8 @@
-require 'test_helper'
+require './spec/spec_helper'
 require './feeder'
 require 'nokogiri'
 
-class FeederTest < Test::Unit::TestCase
+describe Feeder do
   include Rack::Test::Methods
 
   def app
@@ -17,24 +17,25 @@ class FeederTest < Test::Unit::TestCase
     ]
   end
 
-  def setup
+  before do
     Feeder.any_instance.stubs(:get_goodanime_index).returns('anything')
     GoodanimeParser.any_instance.stubs(:results).returns(expected_results)
   end
 
-  def test_goodanime_respond
+  it "respond to /goodanime.rss" do
     get '/goodanime.rss'
 
-    assert last_response.ok?
+    last_response.ok?.must_equal true # Ugly, no predicate assertions with Minitest?
   end
 
-  def test_goodanime_serve_the_rss_feed
+  it "respond with the expected rss at /goodanime.rss" do
     get '/goodanime.rss'
 
     doc = Nokogiri::XML(last_response.body)
-    assert_equal 3, doc.css('item').count
-    assert_equal expected_results.map { |r| r[:title] }, doc.css('item > title').map(&:content)
-    assert_equal expected_results.map { |r| r[:link] },  doc.css('item > link').map(&:content)
-    assert_equal expected_results.map { |r| r[:guid] },  doc.css('item > guid').map(&:content)
+
+    doc.css('item').count.must_equal 4
+    doc.css('item > title').map(&:content).must_equal expected_results.map { |r| r[:title] }
+    doc.css('item > link').map(&:content).must_equal expected_results.map { |r| r[:link] }
+    doc.css('item > guid').map(&:content).must_equal expected_results.map { |r| r[:guid] }
   end
 end

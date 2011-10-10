@@ -1,4 +1,5 @@
-require 'test/unit'
+require 'minitest/spec'
+require 'minitest/autorun'
 require 'rack/test'
 require 'mocha'
 

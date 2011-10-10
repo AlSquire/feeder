@@ -1,7 +1,7 @@
-require 'test_helper'
+require './spec/spec_helper'
 require './goodanime_parser'
 
-class GoodanimeParserTest < Test::Unit::TestCase
+describe GoodanimeParser do
 
   # Expected results from the current fixtures/goodanime_index.html
   def expected_results
@@ -134,20 +134,21 @@ class GoodanimeParserTest < Test::Unit::TestCase
     ]
   end
 
-  def setup
-    @goodanime_html = File.read('test/fixtures/goodanime_index.html')
+  before do
+    @goodanime_html = File.read('spec/fixtures/goodanime_index.html')
     @parser = GoodanimeParser.new(@goodanime_html)
   end
 
-  def test_html_source
-    assert_equal @goodanime_html, @parser.html_source
+  it "have the given html source" do
+    @parser.html_source.must_equal @goodanime_html
   end
 
-  def test_results_count
-    assert_equal 25, @parser.results.count
+  it "parse html source for the expected number of results" do
+    @parser.results.count.must_equal 25
   end
 
-  def test_results
-    assert_equal expected_results, @parser.results
+  it "parse html source for the expected results" do
+    # assert_equal expected_results, @parser.results
+    @parser.results.must_equal expected_results
   end
 end

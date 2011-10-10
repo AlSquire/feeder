@@ -10,8 +10,9 @@ group :production do
 end
 
 group :development, :test do
+  gem 'minitest'
   gem 'rack-test'
-  gem 'guard-test'
+  gem 'guard-minitest'
   gem 'mocha'
   # For Mac OS X love
   gem 'growl'
