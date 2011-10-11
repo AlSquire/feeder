@@ -33,7 +33,7 @@ describe Feeder do
 
     doc = Nokogiri::XML(last_response.body)
 
-    doc.css('item').count.must_equal 4
+    doc.css('item').count.must_equal 3
     doc.css('item > title').map(&:content).must_equal expected_results.map { |r| r[:title] }
     doc.css('item > link').map(&:content).must_equal expected_results.map { |r| r[:link] }
     doc.css('item > guid').map(&:content).must_equal expected_results.map { |r| r[:guid] }
