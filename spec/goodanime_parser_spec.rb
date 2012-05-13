@@ -3,152 +3,157 @@ require './goodanime_parser'
 
 describe GoodanimeParser do
 
-  # Expected results from the current fixtures/goodanime_index.html
+  # Expected results from the current fixtures/vcr_cassettes/goodanime.yml
   def expected_results
     [
       {
-        :title => "Itsuka Tenma no Kuro-Usagi Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/itsuka-tenma-no-kuro-usagi-episode-11",
-        :guid  => "itsuka-tenma-no-kuro-usagi-episode-11-sub"
+        :title => "Pokemon Season 15 BW Rival Destinies Episode 13 (Dub)",
+        :link  => "http://www.goodanime.net/pokemon-season-15-bw-rival-destinies-episode-13",
+        :guid  => "pokemon-season-15-bw-rival-destinies-episode-13-dub"
       },
       {
-        :title => "Sacred Seven Episode 12 (Raw)",
-        :link  => "http://www.goodanime.net/sacred-seven-episode-12",
-        :guid  => "sacred-seven-episode-12-raw"
+        :title => "Pokemon Season 15 BW Rival Destinies Episode 12 (Dub)",
+        :link  => "http://www.goodanime.net/pokemon-season-15-bw-rival-destinies-episode-12",
+        :guid  => "pokemon-season-15-bw-rival-destinies-episode-12-dub"
       },
       {
-        :title => "Dantalian no Shoka Episode 10 (Sub)",
-        :link  => "http://www.goodanime.net/dantalian-no-shoka-episode-10",
-        :guid  => "dantalian-no-shoka-episode-10-sub"
+        :title => "Hyouka Episode 4 (Raw)",
+        :link  => "http://www.goodanime.net/hyouka-episode-4",
+        :guid  => "hyouka-episode-4-raw"
       },
       {
-        :title => "Kamisama no Memochou Episode 11 (Raw)",
-        :link  => "http://www.goodanime.net/kamisama-no-memochou-episode-11",
-        :guid  => "kamisama-no-memochou-episode-11-raw"
+        :title => "Saki: Achiga-hen Episode 6 (Sub)",
+        :link  => "http://www.goodanime.net/saki-achiga-hen-episode-6",
+        :guid  => "saki-achiga-hen-episode-6-sub"
       },
       {
-        :title => "Blade Episode 12 (Raw)",
-        :link  => "http://www.goodanime.net/blade-episode-12",
-        :guid  => "blade-episode-12-raw"
+        :title => "Tasogare Otome x Amnesia Episode 6 (Raw)",
+        :link  => "http://www.goodanime.net/tasogare-otome-x-amnesia-episode-6",
+        :guid  => "tasogare-otome-x-amnesia-episode-6-raw"
       },
       {
-        :title => "Ro-Kyu-Bu! Episode 11 (Raw)",
-        :link  => "http://www.goodanime.net/ro-kyu-bu-episode-11",
-        :guid  => "ro-kyu-bu-episode-11-raw"
+        :title => "Toriko Episode 56 (Raw)",
+        :link  => "http://www.goodanime.net/toriko-episode-56",
+        :guid  => "toriko-episode-56-raw"
       },
       {
-        :title => "Baka to Test to Shoukanjuu Season 2 Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/baka-to-test-to-shoukanjuu-season-2-episode-11",
-        :guid  => "baka-to-test-to-shoukanjuu-season-2-episode-11-sub"
+        :title => "Nazo no Kanojo X Episode 6 (Sub)",
+        :link  => "http://www.goodanime.net/nazo-no-kanojo-x-episode-6",
+        :guid  => "nazo-no-kanojo-x-episode-6-sub"
       },
       {
-        :title => "Yu-Gi-Oh! Zexal Episode 23 (Sub)",
-        :link  => "http://www.goodanime.net/yu-gi-oh-zexal-episode-23",
-        :guid  => "yu-gi-oh-zexal-episode-23-sub"
+        :title => "Arashi no Yoru ni: Himitsu no Tomodachi Episode 4 (Sub)",
+        :link  => "http://www.goodanime.net/arashi-no-yoru-ni-himitsu-no-tomodachi-episode-4",
+        :guid  => "arashi-no-yoru-ni-himitsu-no-tomodachi-episode-4-sub"
       },
       {
-        :title => "Mawaru Penguindrum Episode 10 (Sub)",
-        :link  => "http://www.goodanime.net/mawaru-penguindrum-episode-10",
-        :guid  => "mawaru-penguindrum-episode-10-sub"
+        :title => "AKB0048 Episode 3 (Raw)",
+        :link  => "http://www.goodanime.net/akb0048-episode-3",
+        :guid  => "akb0048-episode-3-raw"
       },
       {
-        :title => "The IDOLM@STER Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/the-idolmster-episode-11",
-        :guid  => "the-idolmster-episode-11-sub"
+        :title => "Phi Brain: Kami no Puzzle Episode 31 (Raw)",
+        :link  => "http://www.goodanime.net/phi-brain-kami-no-puzzle-episode-31",
+        :guid  => "phi-brain-kami-no-puzzle-episode-31-raw"
       },
       {
-        :title => "Mayo Chiki Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/mayo-chiki-episode-11",
-        :guid  => "mayo-chiki-episode-11-sub"
+        :title => "Gundam AGE Episode 31 (Raw)",
+        :link  => "http://www.goodanime.net/gundam-age-episode-31",
+        :guid  => "gundam-age-episode-31-raw"
       },
       {
-        :title => "Pokemon Best Wishes! Episode 50 (Raw)",
-        :link  => "http://www.goodanime.net/pokemon-best-wishes-episode-50",
-        :guid  => "pokemon-best-wishes-episode-50-raw"
+        :title => "Acchi Kocchi Episode 6 (Sub)",
+        :link  => "http://www.goodanime.net/acchi-kocchi-episode-6",
+        :guid  => "acchi-kocchi-episode-6-sub"
       },
       {
-        :title => "Pokemon Best Wishes! Episode 49 (Raw)",
-        :link  => "http://www.goodanime.net/pokemon-best-wishes-episode-49",
-        :guid  => "pokemon-best-wishes-episode-49-raw"
+        :title => "Hiiro no Kakera Episode 7 (Sub)",
+        :link  => "http://www.goodanime.net/hiiro-no-kakera-episode-7",
+        :guid  => "hiiro-no-kakera-episode-7-sub"
       },
       {
-        :title => "Hyouge Mono Episode 22 (Raw)",
-        :link  => "http://www.goodanime.net/hyouge-mono-episode-22",
-        :guid  => "hyouge-mono-episode-22-raw"
+        :title => "Saint Seiya Omega Episode 7 (Raw)",
+        :link  => "http://www.goodanime.net/saint-seiya-omega-episode-7",
+        :guid  => "saint-seiya-omega-episode-7-raw"
       },
       {
-        :title => "Blood-C Episode 10 (Sub)",
-        :link  => "http://www.goodanime.net/blood-c-episode-10",
-        :guid  => "blood-c-episode-10-sub"
+        :title => "Uchuu Kyoudai Episode 7 (Sub)",
+        :link  => "http://www.goodanime.net/uchuu-kyoudai-episode-7",
+        :guid  => "uchuu-kyoudai-episode-7-sub"
       },
       {
-        :title => "Usagi Drop Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/usagi-drop-episode-11",
-        :guid  => "usagi-drop-episode-11-sub"
+        :title => "Hunter X Hunter 2011 Episode 31 (Sub)",
+        :link  => "http://www.goodanime.net/hunter-x-hunter-2011-episode-31",
+        :guid  => "hunter-x-hunter-2011-episode-31-sub"
       },
       {
-        :title => "No. 6 Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/no-6-episode-11",
-        :guid  => "no-6-episode-11-sub"
+        :title => "One Piece episode 547 (Sub)",
+        :link  => "http://www.goodanime.net/one-piece-episode-547",
+        :guid  => "one-piece-episode-547-sub"
       },
       {
-        :title => "Sket Dance Episode 24 (Sub)",
-        :link  => "http://www.goodanime.net/sket-dance-episode-24",
-        :guid  => "sket-dance-episode-24-sub"
+        :title => "Pretty Rhythm Aurora Dream Special 4 (Sub)",
+        :link  => "http://www.goodanime.net/pretty-rhythm-aurora-dream-special-4",
+        :guid  => "pretty-rhythm-aurora-dream-special-4-sub"
       },
       {
-        :title => "Nyanpire The Animation Episode 11 (Raw)",
-        :link  => "http://www.goodanime.net/nyanpire-the-animation-episode-11",
-        :guid  => "nyanpire-the-animation-episode-11-raw"
+        :title => "Pretty Rhythm Aurora Dream Special 3 (Sub)",
+        :link  => "http://www.goodanime.net/pretty-rhythm-aurora-dream-special-3",
+        :guid  => "pretty-rhythm-aurora-dream-special-3-sub"
       },
       {
-        :title => "Double-J Episode 10 (Sub)",
-        :link  => "http://www.goodanime.net/double-j-episode-10",
-        :guid  => "double-j-episode-10-sub"
+        :title => "Folktales from Japan Episode 7 (Sub)",
+        :link  => "http://www.goodanime.net/folktales-from-japan-episode-7",
+        :guid  => "folktales-from-japan-episode-7-sub"
       },
       {
-        :title => "Twin Angel: Twinkle Paradise Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/twin-angel-twinkle-paradise-episode-11",
-        :guid  => "twin-angel-twinkle-paradise-episode-11-sub"
+        :title => "Poyopoyo Kansatsu Nikki Episode 19 (Sub)",
+        :link  => "http://www.goodanime.net/poyopoyo-kansatsu-nikki-episode-19",
+        :guid  => "poyopoyo-kansatsu-nikki-episode-19-sub"
       },
       {
-        :title => "Detective Conan Episode 631 (Sub)",
-        :link  => "http://www.goodanime.net/detective-conan-episode-631",
-        :guid  => "detective-conan-episode-631-sub"
+        :title => "Kuroko no Basuke Episode 6 (Sub)",
+        :link  => "http://www.goodanime.net/kuroko-no-basuke-episode-6",
+        :guid  => "kuroko-no-basuke-episode-6-sub"
       },
       {
-        :title => "Inazuma Eleven Go Episode 20 (Raw)",
-        :link  => "http://www.goodanime.net/inazuma-eleven-go-episode-20",
-        :guid  => "inazuma-eleven-go-episode-20-raw"
+        :title => "Avatar: The Legend of Korra Episode 6 (Dub)",
+        :link  => "http://www.goodanime.net/avatar-the-legend-of-korra-episode-6",
+        :guid  => "avatar-the-legend-of-korra-episode-6-dub"
       },
       {
-        :title => "Morita-san wa Mukuchi Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/morita-san-wa-mukuchi-episode-11",
-        :guid  => "morita-san-wa-mukuchi-episode-11-sub"
+        :title => "Fate Zero S2 Episode 6 (Sub)",
+        :link  => "http://www.goodanime.net/fate-zero-s2-episode-6",
+        :guid  => "fate-zero-s2-episode-6-sub"
       },
       {
-        :title => "Kamisama Dolls Episode 11 (Sub)",
-        :link  => "http://www.goodanime.net/kamisama-dolls-episode-11",
-        :guid  => "kamisama-dolls-episode-11-sub"
+        :title => "Moretsu Pirates Episode 19 (Sub)",
+        :link  => "http://www.goodanime.net/moretsu-pirates-episode-19",
+        :guid  => "moretsu-pirates-episode-19-sub"
       }
     ]
   end
 
+  def goodanime_html
+    VCR.use_cassette('goodanime') do
+      open('http://goodanime.net/') #.to_s
+    end
+  end
+
   before do
-    @goodanime_html = File.read('spec/fixtures/goodanime_index.html')
-    @parser = GoodanimeParser.new(@goodanime_html)
+    @html = goodanime_html
+    @parser = GoodanimeParser.new(@html)
   end
 
   it "have the given html source" do
-    @parser.html_source.must_equal @goodanime_html
+    @parser.html_source.must_equal @html
   end
 
   it "parse html source for the expected number of results" do
-    @parser.results.count.must_equal 25
+    @parser.results.count.must_equal expected_results.size
   end
 
   it "parse html source for the expected results" do
-    # assert_equal expected_results, @parser.results
     @parser.results.must_equal expected_results
   end
 end

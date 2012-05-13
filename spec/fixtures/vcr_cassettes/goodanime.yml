@@ -1,0 +1,464 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://goodanime.net/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sun, 13 May 2012 18:08:27 GMT
+      Server:
+      - Apache/2.2.3 (CentOS)
+      X-Powered-By:
+      - PHP/5.2.10
+      Vary:
+      - Cookie
+      X-Pingback:
+      - http://www.goodanime.net/xmlrpc.php
+      Location:
+      - http://www.goodanime.net/
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: 
+  recorded_at: Sun, 13 May 2012 18:08:27 GMT
+- request:
+    method: get
+    uri: http://www.goodanime.net/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 13 May 2012 18:08:27 GMT
+      Server:
+      - Apache/2.2.3 (CentOS)
+      X-Powered-By:
+      - PHP/5.2.10
+      Vary:
+      - Cookie
+      X-Pingback:
+      - http://www.goodanime.net/xmlrpc.php
+      Wp-Super-Cache:
+      - WP-Cache
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: US-ASCII
+      string: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head
+        profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=UTF-8\" />\n\n<title>New Anime | Free Anime</title>\n<meta name=\"description\"
+        content=\"New Anime | Free Anime\" />\n<meta name=\"keywords\" content=\"New
+        Anime | Free Anime\" />\n\n<link rel=\"shortcut icon\" href=\"favicon.ico\">\n\n<link
+        rel=\"stylesheet\" href=\"http://www.goodanime.net/wp-content/themes/anime/style.css\"
+        type=\"text/css\" media=\"screen\" />\n\n</head>\n\n<body>\n\n<script type=\"text/javascript\">\nwindow.Meebo||function(c){function
+        p(){return[\"<\",i,' onload=\"var d=',g,\";d.getElementsByTagName('head')[0].\",\nj,\"(d.\",h,\"('script')).\",k,\"='//cim.meebo.com/cim?iv=\",a.v,\"&\",q,\"=\",c[q],c[l]?\n\"&\"+l+\"=\"+c[l]:\"\",c[e]?\"&\"+e+\"=\"+c[e]:\"\",\"'\\\"></\",i,\">\"].join(\"\")}var
+        f=window,\na=f.Meebo=f.Meebo||function(){(a._=a._||[]).push(arguments)},d=document,i=\"body\",\nm=d[i],r;if(!m){r=arguments.callee;return
+        setTimeout(function(){r(c)},100)}a.$=\n{0:+new Date};a.T=function(u){a.$[u]=new
+        Date-a.$[0]};a.v=5;var j=\"appendChild\",\nh=\"createElement\",k=\"src\",l=\"lang\",q=\"network\",e=\"domain\",n=d[h](\"div\"),v=n[j](d[h](\"m\")),\nb=d[h](\"iframe\"),g=\"document\",o,s=function(){a.T(\"load\");a(\"load\")};f.addEventListener?\nf.addEventListener(\"load\",s,false):f.attachEvent(\"onload\",s);n.style.display=\"none\";\nm.insertBefore(n,m.firstChild).id=\"meebo\";b.frameBorder=\"0\";b.name=b.id=\"meebo-iframe\";\nb.allowTransparency=\"true\";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=\nd[e];o=\"javascript:var
+        d=\"+g+\".open();d.domain='\"+d.domain+\"';\";b[k]=o+\"void(0);\"}try{var
+        t=\nb.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write(\"'+p().replace(/\"/g,\n'\\\\\"')+'\");d.close();'}a.T(1)}({network:\"gogoanime\"});\n</script>\n\n<div
+        id=\"page\">\n\n<div id=\"header\">\n\n\t<div id=\"headerimg\">\n\n\t</div>\n\n<ul
+        class=\"navi\">\n\n    <li><a href=\"http://www.goodanime.net/\" title=\"Home\"
+        class=\"current\"><span></span>Home</a></li>\n    <li><a href=\"http://www.goodanime.net/anime-list\"
+        title=\"Anime List\"><span></span>Anime List</a></li>\n    <li><a target=\"_blank\"
+        href=\"http://www.goodmanga.net\" title=\"Read Manga\"><span></span>Read Manga</a></li>\n
+        \   <li><a href=\"http://www.goodanime.net/ongoing-series\" title=\"Ongoing
+        List\"><span></span>Ongoing List</a></li>\n    <li><a href=\"http://www.goodanime.net/category/anime-movies\"
+        title=\"Anime Movies\"><span></span>Anime Movies</a></li>\n    <li><a target=\"_blank\"
+        href=\"http://www.facebook.com/pages/GoGo-Entertainment/309278666628\" title=\"Facebook
+        Fanpage\"><span></span>Fanpage</a></li>\n\n</ul>\n\n    <ul id=\"top-search\">\n\n
+        \       <li> \r\n<form method=\"get\" id=\"searchwrap\"  \r\naction=\"http://www.goodanime.net/\">
+        \r\n<input type=\"text\" value=\"Search Anime Here\"  \r\nname=\"s\" id=\"s\"
+        \ \r\nonblur=\"if (this.value == '')  \r\n{this.value = 'Search Anime Here';}\"
+        \ \r\nonfocus=\"if (this.value == 'Search Anime Here')  \r\n{this.value =
+        '';}\" /> \r\n<input type=\"hidden\" id=\"searchsubmit\" /> \r\n</form></li>\n\n
+        \   </ul>\n\n</div>\n\n<div class=\"topad\">\n<div class=\"ad\"><script language=\"JavaScript\"
+        type=\"text/javascript\">\nvar sd = \"\";\nsd += \"&gender=[GENDER VALUE HERE
+        (i.e. 30, 70)]\";\nvar cb = Math.random();\nvar d = document;\nvar ref = \"\";\ntry
+        {\n    if ((window != top) && (window.parent == top)) {\n        ref = \"&rf=\"+escape(d.referrer);\n
+        \   }\n} catch (ignore) { }\nd.write('<script language=\"JavaScript\" type=\"text/javascript\"');\nd.write('src=\"http://optimized-by.rubiconproject.com/a/8405/13548/26615-2.js?cb='+cb+ref+sd+'\">');\nd.write('<\\/scr'+'ipt>');\n</script>\n<noscript>\n<a
+        href=\"http://optimized-by.rubiconproject.com/t/8405/13548/26615-2.1\"><img
+        src=\"http://optimized-by.rubiconproject.com/a/8405/13548/26615-2.img\" width=\"728\"
+        height=\"90\" border=\"0\"></a>\n</noscript></div>\n\t\t\t<div class=\"clear\"></div>\n\t</div>\r\n<div
+        id=\"wrapper\">\r\n\r\n\t<div id=\"content\">\r\n\r\n         \r\n                    <div
+        class=\"post\">\r\n\r\n<iframe src=\"//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FGoGo-Entertainment%2F309278666628&amp;send=false&amp;layout=standard&amp;width=730&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35\"
+        scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:730px;
+        height:35px;\" allowTransparency=\"true\"></iframe>\r\n\r\n<table border=\"0\"
+        width=\"728\" cellpadding=\"0\" bgcolor=\"#FFFF00\" bordercolor=\"#FFFF00\"
+        style=\"border-collapse: collapse\">\r\n\t<tr>\r\n\t\t<td rowspan=\"2\">&nbsp;<font
+        color=\"#FF0000\" size=\"4\"><b>Notice:</b></font>\r\n\t\t<span style=\"font-size:
+        11pt; text-decoration: none\">\r\n\t\t<a target=\"_blank\" href=\"http://www.animeplus.tv\"><font
+        color=\"#000000\">AnimePlus.TV</font></a></span> - \r\n\t\tNEW and improved
+        anime site with many features...<span style=\"font-size: 11pt; text-decoration:
+        none\">\r\n\t\t<a target=\"_blank\" href=\"http://www.animeplus.tv\"><font
+        color=\"#000000\">AnimePlus.TV</font></a></span></td>\r\n\t</tr>\r\n\t<tr>\r\n\t\t<td>&nbsp;</td>\r\n\t</tr>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div
+        align=\"left\">\r\n\r\n\t<table border=\"0\" width=\"730\" style=\"border-collapse:
+        collapse\">\r\n\r\n\t<tr>\r\n\r\n\t\t<td width=\"328\">\r\n\r\n\t\t<h2>Recent
+        Release</h2>\r\n\r\n\t\t</td>\r\n\r\n\t\t<td width=\"250\">\r\n\r\n\t\t<h2>Recently
+        Added Series</h2>\r\n\r\n\t\t</td>\r\n\r\n\t</tr>\r\n\r\n</table>\r\n\r\n</div>\r\n\r\n<div
+        align=\"left\">\r\n\r\n<table border=\"0\" width=\"730\" style=\"border-collapse:
+        collapse\">\r\n\r\n\t<tr>\r\n\r\n\t\t<td width=\"328\" bgcolor=\"#FFFFFF\"
+        valign=\"top\">  \t\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a href=\"http://www.goodanime.net/pokemon-season-15-bw-rival-destinies-episode-13\">\r\n
+        \           Pokemon Season 15 BW Rival Destinies Episode 13            </a><font
+        color=\"#800080\">(Dub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/pokemon-season-15-bw-rival-destinies-episode-12\">\r\n
+        \           Pokemon Season 15 BW Rival Destinies Episode 12            </a><font
+        color=\"#800080\">(Dub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/hyouka-episode-4\">\r\n
+        \           Hyouka Episode 4            </a><font color=\"#FF0000\">(Raw)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/saki-achiga-hen-episode-6\">\r\n            Saki:
+        Achiga-hen Episode 6            </a><font color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/tasogare-otome-x-amnesia-episode-6\">\r\n
+        \           Tasogare Otome x Amnesia Episode 6            </a><font color=\"#FF0000\">(Raw)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/toriko-episode-56\">\r\n            Toriko
+        Episode 56            </a><font color=\"#FF0000\">(Raw)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/nazo-no-kanojo-x-episode-6\">\r\n
+        \           Nazo no Kanojo X Episode 6            </a><font color=\"#00CC00\">(Sub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/arashi-no-yoru-ni-himitsu-no-tomodachi-episode-4\">\r\n
+        \           Arashi no Yoru ni: Himitsu no Tomodachi Episode 4            </a><font
+        color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/akb0048-episode-3\">\r\n
+        \           AKB0048 Episode 3            </a><font color=\"#FF0000\">(Raw)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/phi-brain-kami-no-puzzle-episode-31\">\r\n
+        \           Phi Brain: Kami no Puzzle Episode 31            </a><font color=\"#FF0000\">(Raw)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/gundam-age-episode-31\">\r\n            Gundam
+        AGE Episode 31            </a><font color=\"#FF0000\">(Raw)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/acchi-kocchi-episode-6\">\r\n
+        \           Acchi Kocchi Episode 6            </a><font color=\"#00CC00\">(Sub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/hiiro-no-kakera-episode-7\">\r\n            Hiiro
+        no Kakera Episode 7            </a><font color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/saint-seiya-omega-episode-7\">\r\n
+        \           Saint Seiya Omega Episode 7            </a><font color=\"#FF0000\">(Raw)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/uchuu-kyoudai-episode-7\">\r\n            Uchuu
+        Kyoudai Episode 7            </a><font color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/hunter-x-hunter-2011-episode-31\">\r\n
+        \           Hunter X Hunter 2011 Episode 31            </a><font color=\"#00CC00\">(Sub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/one-piece-episode-547\">\r\n            One
+        Piece episode 547            </a><font color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/pretty-rhythm-aurora-dream-special-4\">\r\n
+        \           Pretty Rhythm Aurora Dream Special 4            </a><font color=\"#00CC00\">(Sub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/pretty-rhythm-aurora-dream-special-3\">\r\n
+        \           Pretty Rhythm Aurora Dream Special 3            </a><font color=\"#00CC00\">(Sub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/folktales-from-japan-episode-7\">\r\n            Folktales
+        from Japan Episode 7            </a><font color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/poyopoyo-kansatsu-nikki-episode-19\">\r\n
+        \           Poyopoyo Kansatsu Nikki Episode 19            </a><font color=\"#00CC00\">(Sub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/kuroko-no-basuke-episode-6\">\r\n            Kuroko
+        no Basuke Episode 6            </a><font color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/avatar-the-legend-of-korra-episode-6\">\r\n
+        \           Avatar: The Legend of Korra Episode 6            </a><font color=\"#800080\">(Dub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n        <li>\r\n            <a
+        href=\"http://www.goodanime.net/fate-zero-s2-episode-6\">\r\n            Fate
+        Zero S2 Episode 6            </a><font color=\"#00CC00\">(Sub)</font>       </li>\r\n</ul>\r\n\t\r\n\t\t\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/moretsu-pirates-episode-19\">\r\n
+        \           Moretsu Pirates Episode 19            </a><font color=\"#00CC00\">(Sub)</font>
+        \      </li>\r\n</ul>\r\n\t\r\n\t\t</td>\r\n\r\n\t\t<td width=\"5\" bgcolor=\"#FFFFFF\"
+        valign=\"top\">&nbsp;</td>\r\n\r\n\t\t<td width=\"250\" bgcolor=\"#FFFFFF\"
+        valign=\"top\"><ul>\r\n        <li>\r\n            <a href=\"http://www.goodanime.net/category/inazuma-eleven-go-2-chrono-stone\">\r\n
+        \           Inazuma Eleven GO 2            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/pretty-rhythm-dear-my-future\">\r\n
+        \           Pretty Rhythm Dear My Future            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/sakamichi-no-apollon\">\r\n
+        \           Sakamichi no Apollon            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/eureka-seven-ao\">\r\n
+        \           Eureka Seven AO            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/metal-fight-beyblade-zero-g\">\r\n
+        \           Metal Fight Beyblade Zero G            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/jormungand\">\r\n
+        \           Jormungand            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/haiyoru-nyaruko-san\">\r\n
+        \           Haiyoru! Nyaruko-san            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/saki-achiga-hen\">\r\n
+        \           Saki: Achiga-hen            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/nazo-no-kanojo-x\">\r\n
+        \           Nazo no Kanojo X            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/jewelpet-kira-deco\">\r\n
+        \           Jewelpet Kira Deco!            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/upotte\">\r\n
+        \           Upotte!!            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/uchuu-senkan-yamato-2199\">\r\n
+        \           Uchuu Senkan Yamato 2199            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/polar-bear-cafe\">\r\n
+        \           Polar Bear Cafe            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/medaka-box\">\r\n
+        \           Medaka Box            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/gakkatsu\">\r\n
+        \           Gakkatsu!            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/sankarea\">\r\n
+        \           Sankarea            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/shining-hearts-shiawase-no-pan\">\r\n
+        \           Shining Hearts: Shiawase no Pan            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/tsuritama\">\r\n
+        \           Tsuritama            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/tasogare-otome-x-amnesia\">\r\n
+        \           Tasogare Otome x Amnesia            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/kuroko-no-basuke\">\r\n
+        \           Kuroko no Basuke            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/sengoku-collection\">\r\n
+        \           Sengoku Collection            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/kuromajo-san-ga-tooru\">\r\n
+        \           Kuromajo-san ga Tooru!!            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/lupin-iii-mine-fujiko-to-iu-onna\">\r\n
+        \           Lupin III &#8211; Mine Fujiko to Iu Onna            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/arashi-no-yoru-ni-himitsu-no-tomodachi\">\r\n
+        \           Arashi no Yoru ni: Himitsu no Tomodachi            </a>\r\n       </li>\r\n</ul>\r\n<ul>\r\n
+        \       <li>\r\n            <a href=\"http://www.goodanime.net/category/yurumates-3d\">\r\n
+        \           Yurumates 3D            </a>\r\n       </li>\r\n</ul>\r\n</td>\r\n\r\n\t</tr>\r\n\r\n</table></div>\r\n\r\n
+        \       </div>        \r\n\r\n<!-- Begin - Game Advertising Online - GoodAnime
+        - GameBox -->\r\n<embed src=\"goodanime_gao_gamebox2.swf\" quality=\"high\"
+        width=\"730\" height=\"204\" wmode=\"window\" type=\"application/x-shockwave-flash\"
+        pluginspage=\"http://www.macromedia.com/go/getflashplayer\"><noembed><a href=\"http://www.game-advertising-online.com/\">Game
+        Advertising Online</a> ad requires flash player.</noembed><script type='text/javascript'>_qoptions={qacct:\"p-57mrc03j0BaV2\"};</script><script
+        type='text/javascript' src='http://edge.quantserve.com/quant.js'></script><noscript><img
+        src='http://pixel.quantserve.com/pixel/p-57mrc03j0BaV2.gif' style='display:
+        none;' height='1' width='1'/></noscript>\r\n<!-- End - Game Advertising Online
+        - GoodAnime - GameBox -->\r\n<p>&nbsp;</p>\r\n\r\n<h2>New Series in 2012</h2>\r\n\r\n\r\n\r\n\r\n
+        \ \r\n\r\n  \t\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div class=\"entry\">\r\n\r\n
+        \               \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div align=\"center\">\r\n\r\n<div
+        class=\"gallery\">\r\n<div class=\"picture\"><a href=\"http://www.goodanime.net/category/inazuma-eleven-go-2-chrono-stone\"
+        title=\"Inazuma Eleven GO 2\" ><img src=\"http://www.goodanime.net/images/inazuma-eleven-go-2-chrono-stone.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/inazuma-eleven-go-2-chrono-stone\"
+        rel=\"bookmark\" title=\"Permanent Link to Inazuma Eleven GO 2\">Inazuma Eleven
+        GO 2</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/pretty-rhythm-dear-my-future\" title=\"Pretty
+        Rhythm Dear My Future\" ><img src=\"http://www.goodanime.net/images/pretty-rhythm-dear-my-future.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/pretty-rhythm-dear-my-future\"
+        rel=\"bookmark\" title=\"Permanent Link to Pretty Rhythm Dear My Future\">Pretty
+        Rhythm Dear My Fut</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/sakamichi-no-apollon\" title=\"Sakamichi
+        no Apollon\" ><img src=\"http://www.goodanime.net/images/sakamichi-no-apollon.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/sakamichi-no-apollon\"
+        rel=\"bookmark\" title=\"Permanent Link to Sakamichi no Apollon\">Sakamichi
+        no Apollon</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/eureka-seven-ao\" title=\"Eureka
+        Seven AO\" ><img src=\"http://www.goodanime.net/images/eureka-seven-ao.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/eureka-seven-ao\"
+        rel=\"bookmark\" title=\"Permanent Link to Eureka Seven AO\">Eureka Seven
+        AO</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/metal-fight-beyblade-zero-g\" title=\"Metal
+        Fight Beyblade Zero G\" ><img src=\"http://www.goodanime.net/thumbs/metal-fight-beyblade-zero-g.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/metal-fight-beyblade-zero-g\"
+        rel=\"bookmark\" title=\"Permanent Link to Metal Fight Beyblade Zero G\">Metal
+        Fight Beyblade Zero</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/jormungand\" title=\"Jormungand\"
+        ><img src=\"http://www.goodanime.net/images/jormungand.jpg\" width=\"135px\"
+        height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/jormungand\"
+        rel=\"bookmark\" title=\"Permanent Link to Jormungand\">Jormungand</a></div>
+        \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/haiyoru-nyaruko-san\" title=\"Haiyoru!
+        Nyaruko-san\" ><img src=\"http://www.goodanime.net/images/haiyoru-nyaruko-san.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/haiyoru-nyaruko-san\"
+        rel=\"bookmark\" title=\"Permanent Link to Haiyoru! Nyaruko-san\">Haiyoru!
+        Nyaruko-san</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/saki-achiga-hen\" title=\"Saki: Achiga-hen\"
+        ><img src=\"http://www.goodanime.net/images/saki-achiga-hen.jpg\" width=\"135px\"
+        height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/saki-achiga-hen\"
+        rel=\"bookmark\" title=\"Permanent Link to Saki: Achiga-hen\">Saki: Achiga-hen</a></div>
+        \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/nazo-no-kanojo-x\" title=\"Nazo no
+        Kanojo X\" ><img src=\"http://www.goodanime.net/images/nazo-no-kanojox.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/nazo-no-kanojo-x\"
+        rel=\"bookmark\" title=\"Permanent Link to Nazo no Kanojo X\">Nazo no Kanojo
+        X</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/jewelpet-kira-deco\" title=\"Jewelpet
+        Kira Deco!\" ><img src=\"http://www.goodanime.net/images/jewelpetkiradeco.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/jewelpet-kira-deco\"
+        rel=\"bookmark\" title=\"Permanent Link to Jewelpet Kira Deco!\">Jewelpet
+        Kira Deco!</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/upotte\" title=\"Upotte!!\" ><img
+        src=\"http://www.goodanime.net/images/upotte.jpg\" width=\"135px\" height=\"190px\"
+        /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/upotte\"
+        rel=\"bookmark\" title=\"Permanent Link to Upotte!!\">Upotte!!</a></div> \r\n\t\t\t<div
+        class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/uchuu-senkan-yamato-2199\" title=\"Uchuu
+        Senkan Yamato 2199\" ><img src=\"http://www.goodanime.net/images/uchuusenkanyamato2199.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/uchuu-senkan-yamato-2199\"
+        rel=\"bookmark\" title=\"Permanent Link to Uchuu Senkan Yamato 2199\">Uchuu
+        Senkan Yamato 2199</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/polar-bear-cafe\" title=\"Polar Bear
+        Cafe\" ><img src=\"http://www.goodanime.net/images/polar_bear_cafe.jpg\" width=\"135px\"
+        height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/polar-bear-cafe\"
+        rel=\"bookmark\" title=\"Permanent Link to Polar Bear Cafe\">Polar Bear Cafe</a></div>
+        \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/medaka-box\" title=\"Medaka Box\"
+        ><img src=\"http://www.goodanime.net/images/medakabox.jpg\" width=\"135px\"
+        height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/medaka-box\"
+        rel=\"bookmark\" title=\"Permanent Link to Medaka Box\">Medaka Box</a></div>
+        \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/gakkatsu\" title=\"Gakkatsu!\" ><img
+        src=\"http://www.goodanime.net/images/gakkatsu.jpg\" width=\"135px\" height=\"190px\"
+        /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/gakkatsu\"
+        rel=\"bookmark\" title=\"Permanent Link to Gakkatsu!\">Gakkatsu!</a></div>
+        \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/sankarea\" title=\"Sankarea\" ><img
+        src=\"http://www.goodanime.net/thumbs/sankarea.jpg\" width=\"135px\" height=\"190px\"
+        /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/sankarea\"
+        rel=\"bookmark\" title=\"Permanent Link to Sankarea\">Sankarea</a></div> \r\n\t\t\t<div
+        class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/shining-hearts-shiawase-no-pan\"
+        title=\"Shining Hearts: Shiawase no Pan\" ><img src=\"http://www.goodanime.net/images/shining-hearts-shiawase-no-pan.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/shining-hearts-shiawase-no-pan\"
+        rel=\"bookmark\" title=\"Permanent Link to Shining Hearts: Shiawase no Pan\">Shining
+        Hearts: Shiawase </a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/tsuritama\" title=\"Tsuritama\" ><img
+        src=\"http://www.goodanime.net/images/tsuritama.jpg\" width=\"135px\" height=\"190px\"
+        /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/tsuritama\"
+        rel=\"bookmark\" title=\"Permanent Link to Tsuritama\">Tsuritama</a></div>
+        \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/tasogare-otome-x-amnesia\" title=\"Tasogare
+        Otome x Amnesia\" ><img src=\"http://www.goodanime.net/thumbs/tasogare-otome-x-amnesia.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/tasogare-otome-x-amnesia\"
+        rel=\"bookmark\" title=\"Permanent Link to Tasogare Otome x Amnesia\">Tasogare
+        Otome x Amnesia</a></div> \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n\r\n\r\n\t\t\t\t<div
+        class=\"entry\">\r\n\r\n                \r\n\r\n<ul class=\"imagelist\">\r\n\r\n<div
+        align=\"center\">\r\n\r\n<div class=\"gallery\">\r\n<div class=\"picture\"><a
+        href=\"http://www.goodanime.net/category/kuroko-no-basuke\" title=\"Kuroko
+        no Basuke\" ><img src=\"http://www.goodanime.net/thumbs/kurokonobasuke.jpg\"
+        width=\"135px\" height=\"190px\" /></a></div>\r\n<div class=\"title\"><a href=\"http://www.goodanime.net/category/kuroko-no-basuke\"
+        rel=\"bookmark\" title=\"Permanent Link to Kuroko no Basuke\">Kuroko no Basuke</a></div>
+        \r\n\t\t\t<div class=\"clear\"></div>\r\n\t</div>\r\n\r\n</div></ul>\r\n\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\r\n\r\n\t\t\r\n
+        \       <p align=\"center\"><a href=\"http://www.goodanime.net/category/new-release\">Click
+        Here</a> for all 2011-2012 Anime Released!</p>\r\n\r\n\t\r\n\r\n\r\n\t</div>\r\n\r\n\r\n\r\n
+        \   \t<div class=\"rsidebar\">\r\n<div align=\"center\"><script language=\"JavaScript\"
+        type=\"text/javascript\">\r\nvar sd = \"\";\r\nsd += \"&gender=[GENDER VALUE
+        HERE (i.e. 30, 70)]\";\r\nvar cb = Math.random();\r\nvar d = document;\r\nvar
+        ref = \"\";\r\ntry {\r\n    if ((window != top) && (window.parent == top))
+        {\r\n        ref = \"&rf=\"+escape(d.referrer);\r\n    }\r\n} catch (ignore)
+        { }\r\nd.write('<script language=\"JavaScript\" type=\"text/javascript\"');\r\nd.write('src=\"http://optimized-by.rubiconproject.com/a/8405/13548/26615-9.js?cb='+cb+ref+sd+'\">');\r\nd.write('<\\/scr'+'ipt>');\r\n</script>\r\n<noscript>\r\n<a
+        href=\"http://optimized-by.rubiconproject.com/t/8405/13548/26615-9.1\"><img
+        src=\"http://optimized-by.rubiconproject.com/a/8405/13548/26615-9.img\" width=\"160\"
+        height=\"600\" border=\"0\"></a>\r\n</noscript></div>\r\n<p>&nbsp;</p>\r\n<div
+        align=\"center\"><script language=\"JavaScript\" type=\"text/javascript\">\r\nvar
+        sd = \"\";\r\nsd += \"&gender=[GENDER VALUE HERE (i.e. 30, 70)]\";\r\nvar
+        cb = Math.random();\r\nvar d = document;\r\nvar ref = \"\";\r\ntry {\r\n    if
+        ((window != top) && (window.parent == top)) {\r\n        ref = \"&rf=\"+escape(d.referrer);\r\n
+        \   }\r\n} catch (ignore) { }\r\nd.write('<script language=\"JavaScript\"
+        type=\"text/javascript\"');\r\nd.write('src=\"http://optimized-by.rubiconproject.com/a/8405/13548/26614-9.js?cb='+cb+ref+sd+'\">');\r\nd.write('<\\/scr'+'ipt>');\r\n</script>\r\n<noscript>\r\n<a
+        href=\"http://optimized-by.rubiconproject.com/t/8405/13548/26614-9.1\"><img
+        src=\"http://optimized-by.rubiconproject.com/a/8405/13548/26614-9.img\" width=\"160\"
+        height=\"600\" border=\"0\"></a>\r\n</noscript></div>\r\n\t</div>\r\n\r\n
+        \   <div class=\"clear\"></div>\r\n\r\n</div>\r\n\r\n<script type=\"text/javascript\"><!--\r\n//
+        Make sure you have this before <html> tag: <!DOCTYPE html PUBLIC \"-//W3C//DTD
+        XHTML 1.0 Transitional//EN\">\r\nvar pagewidth = 930; // Your Page Width (pixels)\r\nvar
+        topa = 0; // Optional Top Adjustment (pixels)\r\nvar lefta = -2; // Optional
+        Left Adjustment (pixels)\r\nvar righta = 2; // Optional Right Adjustment (pixels)\r\nvar
+        zindex = 50; // Optional Layering Adjustment\r\nvar floating = 1; // 1 for
+        floating, 0 for static\r\nvar capping = 1; // 1 to enable cookie-based capping,
+        0 to disable capping\r\nvar impperses = 5; // impressions per session cap
+        (1-5)\r\nvar seslen = 8; // session length in hours (1-24)\r\nvar zoid=1313;eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return
+        r[e]}];e=function(){return'\\\\w+'};c=1};while(c--)if(k[c])p=p.replace(new
+        RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c]);return p}('9 b=e.n(e.o()*p);6(c==1){9
+        d=7.a.f(\\'(^|;) ?g=([^;]*)(;|$)\\');6(d){9 4=7.a.f(\\'(^|;) ?h=([^;]*)(;|$)\\');3=d[2]}i{6(8<1)8=1;6(8>j)8=j;9
+        3=q r();3.s(3.t()+8*u);3=3.v();7.a=\"g=\"+3+\";k=\"+3+\";l=/\"}6(4)4=w(4[2])+1;i
+        4=1;6(4<=x&&4<=5){7.a=\"h=\"+4+\";k=\"+3+\";l=/\";c=0}}6(c!=1)7.y(\"<m z=\\'A/B\\'
+        C=\\'D://E.F-G-H.I/J.K?L=M&N=\"+O+\"&P=Q&b=\"+b+\"\\'><\\\\/m>\");',53,53,'|||ses_exp|skinimp||if|document|seslen|var|cookie|rand|capping|coo_exp|Math|match|gao_session_expiry|gao_skin_views|else|24|expires|path|script|round|random|9999999|new|Date|setTime|getTime|3600000|toGMTString|parseInt|impperses|write|type|text|javascript|src|http|www2|game|advertising|online|com|index|php|section|serve|id|zoid|output|skin'.split('|'),0,{}))\r\n//--></script><noscript>Game
+        advertisements by <a href=\"http://www.game-advertising-online.com\" target=\"_blank\">Game
+        Advertising Online</a> require JavaScript.</noscript>\r\n\r\n<script language=\"javascript\"><!--\r\nvar
+        dc=document; var date_ob=new Date();\r\ndc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();\r\nif(dc.cookie.indexOf('e=llo')
+        <= 0 && dc.cookie.indexOf('2=o') > 0){\r\ndc.write('<scr'+'ipt language=\"javascript\"
+        src=\"http://media.fastclick.net');\r\ndc.write('/w/pop.cgi?sid=55789&m=2&tp=2&v=1.8&c='+bust+'\"></scr'+'ipt>');\r\ndate_ob.setTime(date_ob.getTime()+14400000);\r\ndc.cookie='he=llo;
+        path=/; expires='+ date_ob.toGMTString();} // -->\r\n</script>\r\n\r\n<script
+        type=\"text/javascript\">\r\nvar gaJsHost = ((\"https:\" == document.location.protocol)
+        ? \"https://ssl.\" : \"http://www.\");\r\ndocument.write(unescape(\"%3Cscript
+        src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n</script>\r\n<script
+        type=\"text/javascript\">\r\ntry {\r\nvar pageTracker = _gat._getTracker(\"UA-6832562-9\");\r\npageTracker._trackPageview();\r\n}
+        catch(err) {}</script>\r\n\r\n<script type=\"text/javascript\">\r\nvar sc_project=5428632;
+        \r\nvar sc_invisible=1; \r\nvar sc_partition=46; \r\nvar sc_click_stat=1;
+        \r\nvar sc_security=\"b52356c2\"; \r\n</script>\r\n\r\n<script type=\"text/javascript\"\r\nsrc=\"http://www.statcounter.com/counter/counter.js\"></script><noscript><div\r\nclass=\"statcounter\"><a
+        title=\"wordpress blog stats\"\r\nhref=\"http://www.statcounter.com/wordpress.com/\"\r\ntarget=\"_blank\"><img
+        class=\"statcounter\"\r\nsrc=\"http://c.statcounter.com/5428632/0/b52356c2/1/\"\r\nalt=\"wordpress
+        blog stats\" ></a></div></noscript>\r\n\r\n<div id=\"footer\">\r\n<p>Copyright
+        &copy; GoodAnime.Net All Right Reserve! <br>\r\n<a target=\"_blank\" href=\"http://www.mydramalist.com\">Drama
+        List</a> |\r\n<a target=\"_blank\" href=\"http://www.gooddrama.net\">Free
+        Drama</a> |\r\n<a target=\"_blank\" href=\"http://www.animeultima.tv\">Watch
+        Free Anime</a> |\r\n<a target=\"_blank\" href=\"http://www.animeget.com\">Watch
+        Anime</a> |\r\n<a target=\"_blank\" href=\"http://www.mangabit.com\">Read
+        Manga</a> |\r\n<a target=\"_blank\" href=\"http://www.animefreak.tv\">Anime</a>
+        |\r\n<a target=\"_blank\" href=\"http://www.mangareader.net/93/naruto.html\">Naruto
+        Manga</a> | <a href=\"http://www.goodanime.net/private-policy\">Privacy &
+        Disclaimer</a> | <a href=\"http://www.goodanime.net/contact\">Contact Us</a></p>\r\n</div>\r\n\r\n<script
+        type=\"text/javascript\">\r\n    Meebo('domReady');\r\n</script>\r\n</body>\r\n</html>\r\n\n<!--
+        Dynamic page generated in 0.631 seconds. -->\n<!-- Cached page generated by
+        WP-Super-Cache on 2012-05-13 10:06:41 -->\n"
+    http_version: 
+  recorded_at: Sun, 13 May 2012 18:08:28 GMT
+recorded_with: VCR 2.1.1

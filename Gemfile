@@ -17,4 +17,6 @@ group :development, :test do
   # For Mac OS X love
   gem 'growl'
   gem 'rb-fsevent'
+  gem 'webmock'
+  gem 'vcr'
 end

@@ -1,6 +1,5 @@
 require './spec/spec_helper'
 require './feeder'
-require 'nokogiri'
 
 describe Feeder do
   include Rack::Test::Methods
