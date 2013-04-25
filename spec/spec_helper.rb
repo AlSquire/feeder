@@ -3,7 +3,7 @@ require 'minitest/autorun'
 require 'rack/test'
 require 'open-uri'
 require 'nokogiri'
-require 'mocha'
+require 'mocha/setup'
 require 'vcr'
 
 ENV['RACK_ENV'] = 'test'
