@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+ruby '2.0.0' unless ENV['TRAVIS']
+
 gem 'sinatra'
 gem 'nokogiri'
 gem 'builder'
